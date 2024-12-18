@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>게시글 보기</title>
+</head>
+<body>
+<h1>게시글 상세 정보</h1>
+<p>제목: <span th:text="${board.title}"></span></p>
+<p>작성자: <span th:text="${board.writer}"></span></p>
+<p>내용:</p>
+<p th:text="${board.content}"></p>
+<p>작성일: <span th:text="${board.createDt}"></span></p>
+<a href="/board/list">목록으로 돌아가기</a>
+</body>
+</html>
